@@ -5,7 +5,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3' // must match the name you gave it in Manage Jenkins → Tools
+        jdk 'JDK25'     // must match the JDK installation name in Manage Jenkins → Tools
+        maven 'Maven3'  // must match the name you gave it in Manage Jenkins → Tools
     }
 
     stages {
